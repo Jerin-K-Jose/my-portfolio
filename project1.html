@@ -1,0 +1,185 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator Using OpAmp</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles (Smooth Scrolling and Fade-in Animation) -->
+    <style>
+      /* Enable smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Fade-in animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+  
+      /* Apply fade-in to specific elements */
+      .fade-in {
+        animation: fadeIn 2s ease-out forwards;
+      }
+  
+      /* Optional: Slide-in animation */
+      @keyframes slideIn {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      /* Apply slide-in to elements */
+      .slide-in {
+        animation: slideIn 1s ease-out forwards;
+      }
+    </style>
+  </head>
+  
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 fade-in">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Function Generator Using OpAmp</h1>
+      <nav class="space-x-6">
+        <a href="#overview" class="hover:text-gray-400">Overview</a>
+        <a href="#timeline" class="hover:text-gray-400">Timeline</a>
+        <a href="#details" class="hover:text-gray-400">Details</a>
+        <a href="#media" class="hover:text-gray-400">Media</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-80 fade-in" style="background-image: url('function-generator-cover.jpg');">
+    <div class="h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl font-bold mb-4">A Complete Analog Waveform Solution</h2>
+        <p class="text-lg">Explore how this OpAmp-based function generator creates sine, square, and triangular waveforms with precision.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-12 bg-white slide-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Overview</h2>
+      <p class="text-gray-700 mb-3">
+        This function generator project, developed for the Linear Integrated Circuits course at Rajagiri School of Engineering & Technology, demonstrates an innovative approach to waveform generation using operational amplifiers. The circuit ingeniously combines a Schmitt trigger, integrators, and a non-inverting amplifier to produce sine, square, and triangular waveforms with precise frequency control.
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Timeline</h2>
+      <div class="space-y-8">
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 1</h3>
+            <p class="text-gray-600">Feb 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Researched and selected a suitable Op-Amp circuit design for the function generator. Chose a configuration that supports sine, square, and triangular wave generation.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 2</h3>
+            <p class="text-gray-600">Feb 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Designed and simulated the circuit with an integrator to convert the triangular waveform to a sine wave. Tested different resistor and capacitor values to optimize waveform output.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 3</h3>
+            <p class="text-gray-600">Feb 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Assembled the circuit on a breadboard. Integrated potentiometers to control the frequency and amplitude of the waveform, and tested each output waveform (sine, square, and triangular) on an oscilloscope.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 4</h3>
+            <p class="text-gray-600">Feb 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Finalized the circuit design and adjusted the components for better performance. The entire circuit which was soldered and enclosed was presented as part of the course, demonstrating Analog circuit design and hardware proficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Explanation Section -->
+  <section id="details" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Detailed Explanation</h2>
+      <div class="space-y-6">
+        <p class="text-gray-700">
+            The system's core design involves a multi-stage signal generation process, where a Schmitt trigger initially creates a square wave, which is then transformed into a triangular wave through an integrator. A subsequent integration stage converts the triangular wave to a sine wave, with a final non-inverting amplifier providing adjustable signal amplification. Frequency modification is achieved through strategic resistor and capacitor combinations, with a jumper-selected capacitor bank and potentiometer enabling fine-tuned frequency range adjustment.
+        </p>
+        <p class="text-gray-700">
+            The circuit leverages the unique characteristics of operational amplifiers to implement sophisticated signal generation techniques. The Schmitt trigger stage ensures precise square wave generation with clean, sharp transitions between high and low states. This square wave serves as the input for the first integrator, which uses the OpAmp's integrator configuration to convert the abrupt square wave into a smooth triangular wave through controlled capacitor charging and discharging cycles.
+        </p>
+        <p class="text-gray-700">
+            Frequency control is a critical aspect of the design, implemented through a flexible component arrangement. The capacitor bank, selectable via a jumper switch, allows for broad frequency range modifications. Within each selected range, the potentiometer provides granular frequency fine-tuning, giving users precise control over the output signal's characteristics. This approach enables the generation of waveforms across multiple frequency bands while maintaining consistent signal quality.
+        </p>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Circuit Components</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Operational Amplifiers (multiple stages)</li>
+            <li>Schmitt Trigger for square wave generation</li>
+            <li>Integrator stages for waveform transformation</li>
+            <li>Non-inverting amplifier for signal conditioning</li>
+            <li>Potentiometer for amplitude and frequency control</li>
+            <li>Capacitor bank with jumper selection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Media Section -->
+<section id="media" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Media</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Image -->
+        <img src="assets/projects/Project 1/img1.jpeg" alt="img" class="rounded shadow-lg">
+        <img src="assets/projects/Project 1/img2.jpeg" alt="img" class="rounded shadow-lg">
+        <img src="assets/projects/Project 1/schematic.jpg" alt="img" class="rounded shadow-lg">
+      </div>
+      <!-- Video -->
+      <div class="mt-8">
+        <iframe class="w-full h-64 md:h-96 rounded shadow-lg" src="https://www.youtube.com/embed/2_KoZfAYAtY" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jerin K Jose | <a href="https://github.com/Jerin-K-Jose" target="_blank" class="hover:text-blue-400">GitHub</a> | <a href="https://linkedin.com/in/jerin-k-jose" target="_blank" class="hover:text-blue-400">LinkedIn</a> | <a href="https://www.instagram.com/jerin_j.j/" target="_blank" class="hover:text-blue-400">Instagram</a></p>
+    </div>
+  </footer>
+</body>
+</html>

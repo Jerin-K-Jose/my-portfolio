@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Agriculture System (SmAS)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Smart Agriculture System (SmAS)</h1>
+      <nav class="space-x-6">
+        <a href="#overview" class="hover:text-gray-400">Overview</a>
+        <a href="#timeline" class="hover:text-gray-400">Timeline</a>
+        <a href="#details" class="hover:text-gray-400">Details</a>
+        <a href="#media" class="hover:text-gray-400">Media</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-80 fade-in" style="background-image: url('smart-agriculture-cover.jpg');">
+    <div class="h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl font-bold mb-4">Revolutionizing Agriculture with IoT</h2>
+        <p class="text-lg">Explore how SmAS automates irrigation and environmental monitoring for sustainable farming.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Overview</h2>
+      <p class="text-gray-700 mb-4">
+        The Smart Agriculture System (SmAS) is an IoT-based project designed to modernize traditional farming practices. 
+        Developed as a mini-project, it leverages real-time monitoring of soil moisture, temperature, and humidity to optimize irrigation systems.
+      </p>
+      <p class="text-gray-700">
+        Using NodeMCU ESP32 and various sensors, SmAS integrates seamlessly with the Blynk IoT cloud platform to provide farmers with actionable insights and control from their smartphones, ensuring efficient water usage and improved crop health.
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Timeline</h2>
+      <div class="space-y-8">
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 1</h3>
+            <p class="text-gray-600">May 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Researched IoT-based solutions for smart farming and selected DHT11 and soil moisture sensors for real-time data collection.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 2</h3>
+            <p class="text-gray-600">June 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Developed the hardware circuit with NodeMCU ESP32 and integrated it with the Blynk IoT cloud platform for remote monitoring and control.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 3</h3>
+            <p class="text-gray-600">July 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Tested the system by automating irrigation based on soil moisture thresholds.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 4</h3>
+            <p class="text-gray-600">August 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Deployed the system in a mini green-house prototype setup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Explanation Section -->
+  <section id="details" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Detailed Explanation</h2>
+      <div class="space-y-6">
+        <p class="text-gray-700">
+          The Smart Agriculture System utilizes a combination of sensors, microcontrollers, and IoT technology to automate irrigation and monitor environmental conditions. Key features include:
+        </p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>DHT11 Sensor: Measures temperature and humidity to monitor the environmental conditions affecting crops.</li>
+          <li>Soil Moisture Sensor: Detects soil moisture levels and triggers automated irrigation when levels fall below a threshold.</li>
+          <li>NodeMCU ESP32: Acts as the central controller, collecting data from sensors and sending it to the Blynk IoT cloud.</li>
+          <li>Blynk IoT Integration: Allows users to monitor and control the system remotely via a smartphone app.</li>
+        </ul>
+        <p class="text-gray-700">
+          The system is designed to be energy-efficient and scalable, enabling its deployment in small farms and larger agricultural setups alike.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Media</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3">
+        <img src="assets/projects/Project 2/img1.jpg" alt="img" class="rounded shadow-lg h-72 object-cover">
+        <img src="assets/projects/Project 2/img3.jpg" alt="img" class="rounded shadow-lg h-72 object-cover">
+        <img src="assets/projects/Project 2/img4.jpg" alt="img" class="rounded shadow-lg h-72 object-cover">
+        <img src="assets/projects/Project 2/img5.jpg" alt="img" class="rounded shadow-lg h-72 object-cover">
+        <img src="assets/projects/Project 2/img2.jpg" alt="img" class="rounded shadow-lg h-72 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jerin K Jose | <a href="https://github.com/Jerin-K-Jose" target="_blank" class="hover:text-blue-400">GitHub</a> | <a href="https://linkedin.com/in/jerin-k-jose" target="_blank" class="hover:text-blue-400">LinkedIn</a> | <a href="https://www.instagram.com/jerin_j.j/" target="_blank" class="hover:text-blue-400">Instagram</a></p>
+    </div>
+  </footer>
+</body>
+</html>

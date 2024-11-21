@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Activity Recognition (HAR) using Radar</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Human Activity Recognition (HAR) using Radar</h1>
+      <nav class="space-x-6">
+        <a href="#overview" class="hover:text-gray-400">Overview</a>
+        <a href="#timeline" class="hover:text-gray-400">Timeline</a>
+        <!-- <a href="#details" class="hover:text-gray-400">Details</a>
+        <a href="#media" class="hover:text-gray-400">Media</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-80 fade-in" style="background-image: url('assets/projects/HAR/hero.jpg');">
+    <div class="h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl font-bold mb-4">Transforming Human Activity Detection with Radar</h2>
+        <p class="text-lg">Explore how radar and machine learning combine to classify human activities with precision.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Overview</h2>
+      <p class="text-gray-700 mb-4">
+        The Human Activity Recognition (HAR) using Radar project leverages radar technology and machine learning to classify human activities. 
+        This innovative approach eliminates the need for wearable devices, making it more convenient and less intrusive.
+        The system can also be used for applications such as health monitoring, security systems, and smart environments.
+      </p>
+      <p class="text-gray-700">
+        We used a publicaly available dataset named uRadHAR dataset containing micro-Doppler signatures of different human activities performed by different people. These data are then processed using signal processing techniques to extract useful features, which were used to train and classify using a BiLSTM model implemented in MATLAB. 
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Timeline</h2>
+      <div class="space-y-8">
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 1</h3>
+            <p class="text-gray-600">Dec 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Obtained the Dataset from IEEE Dataport and studied the same.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 2</h3>
+            <p class="text-gray-600">Jan 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Preprocessed radar signals and generated spectrograms for feature extraction using MATLAB.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 3</h3>
+            <p class="text-gray-600">Feb 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Trained a BiLSTM model on the preprocessed data for classifying human activities such as Boxing, Jumping, Walking, etc...</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 4</h3>
+            <p class="text-gray-600">March 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Trained for different combinations of parameters in signal processing as well as BiLSTM model and obtianed the model with highest accuracy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Explanation Section
+  <section id="details" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Detailed Explanation</h2>
+      <div class="space-y-6">
+        <p class="text-gray-700">
+          This project integrates radar hardware and machine learning for non-contact human activity recognition. The workflow includes:
+        </p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>HB100 Radar Module: Captures micro-Doppler signals from human activities.</li>
+          <li>Signal Processing: Preprocesses radar signals to generate spectrograms for feature extraction.</li>
+          <li>BiLSTM Attention Model: Processes sequential spectrogram data and enhances feature focus using attention mechanisms for improved classification.</li>
+          <li>MATLAB Implementation: Handles data preprocessing, training, and testing of the BiLSTM Attention model.</li>
+        </ul>
+        <p class="text-gray-700">
+          The system achieved high accuracy and demonstrated potential for real-time applications in smart environments and healthcare monitoring.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jerin K Jose | <a href="https://github.com/Jerin-K-Jose" target="_blank" class="hover:text-blue-400">GitHub</a> | <a href="https://linkedin.com/in/jerin-k-jose" target="_blank" class="hover:text-blue-400">LinkedIn</a> | <a href="https://www.instagram.com/jerin_j.j/" target="_blank" class="hover:text-blue-400">Instagram</a></p>
+    </div>
+  </footer>
+</body>
+</html>
