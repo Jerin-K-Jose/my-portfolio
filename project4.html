@@ -1,0 +1,198 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCB Design using ATMega328P Microcontroller</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles (Smooth Scrolling and Fade-in Animation) -->
+    <style>
+      /* Enable smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Fade-in animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+  
+      /* Apply fade-in to specific elements */
+      .fade-in {
+        animation: fadeIn 2s ease-out forwards;
+      }
+  
+      /* Optional: Slide-in animation */
+      @keyframes slideIn {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      /* Apply slide-in to elements */
+      .slide-in {
+        animation: slideIn 1s ease-out forwards;
+      }
+    </style>
+  </head>
+  
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 fade-in">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold">PCB Design using ATMega328P Microcontroller</h1>
+      <nav class="space-x-6">
+        <a href="#overview" class="hover:text-gray-400">Overview</a>
+        <a href="#timeline" class="hover:text-gray-400">Timeline</a>
+        <a href="#details" class="hover:text-gray-400">Details</a>
+        <a href="#media" class="hover:text-gray-400">Media</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+    <section class="bg-cover bg-center h-80 fade-in" style="background-image: url('pcb-design-cover.jpg');">
+        <div class="h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white">
+            <h2 class="text-4xl font-bold mb-4">PCB Design with ATmega328P</h2>
+            <p class="text-lg">Explore how this internship project integrates motor control, display, and power management in a custom PCB with the ATmega328P microcontroller.</p>
+            </div>
+        </div>
+    </section>
+  
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-12 bg-white slide-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Overview</h2>
+      <p class="text-gray-700 mb-3">
+        As part of a PCB design internship focused on learning practical design principles and hands-on experience, I successfully designed a custom PCB using the ATmega328P microcontroller, a highly versatile and widely used microcontroller in embedded systems. The project incorporated several key features to enhance its functionality and usability, showcasing my understanding of embedded systems and electronic design.
+        </p>
+    </div>
+  </section>
+
+<!-- Timeline Section -->
+<section id="timeline" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Timeline</h2>
+      <div class="space-y-8">
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 1</h3>
+            <p class="text-gray-600">Jan 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">The project was assigned as part of the internship, where the goal was to design a PCB using the ATmega328P microcontroller. Began the design process in EagleCAD, focusing on the motor control, display integration, and power management aspects.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 2</h3>
+            <p class="text-gray-600">Jan 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Integrated the L293D motor driver IC to control the DC motors. Connected a 7-segment display using a CD4511BE IC for numerical output. Completed the schematic for these components and ensured proper integration for functionality.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 3</h3>
+            <p class="text-gray-600">Jan 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Added header pins for debugging and programming support. Integrated a reset button and RGB LED to provide user interface feedback and enhance interaction with the system. Refined the design for optimal functionality and ease of use.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+          <div class="w-1/4 text-right pr-4">
+            <h3 class="text-xl font-semibold">Step 4</h3>
+            <p class="text-gray-600">Jan 2023</p>
+          </div>
+          <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+            <p class="text-gray-700">Designed the power supply section to ensure stable 5V output from a 12V input using a voltage regulator. Finalized the PCB layout, ensuring all components were placed correctly and the routing was optimal for fabrication.</p>
+          </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="flex items-center">
+            <div class="w-1/4 text-right pr-4">
+                <h3 class="text-xl font-semibold">Step 5</h3>
+                <p class="text-gray-600">Jan 2023</p>
+            </div>
+            <div class="w-3/4 pl-4 border-l-4 border-blue-500">
+                <p class="text-gray-700">Completed the routing process for the PCB, ensuring the trace width was appropriately sized—larger traces for power tracks and smaller traces for signal routing. The PCB design was finalized with two layers to optimize space and ensure efficient signal flow and power distribution.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Detailed Explanation Section -->
+<section id="details" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Detailed Explanation</h2>
+      <div class="space-y-6">
+        <p class="text-gray-700">
+            The PCB design incorporates several key features centered around the ATmega328P microcontroller to enable a variety of functionalities. The design focuses on motor control, display integration, user interface development, and power management. Each of these aspects has been carefully integrated to create a versatile and efficient embedded system, ideal for applications requiring motor control, user interaction, and real-time feedback.
+        </p>
+        <p class="text-gray-700">
+            The motor control section of the design uses the L293D motor driver IC, interfacing with the ATmega328P microcontroller to control DC motors. This allows for precise control of motor speed and direction, making it suitable for robotics and automation systems. The 7-segment display with a CD4511BE IC is used for displaying numerical data, providing users with real-time feedback on system performance. The display integrates smoothly with the microcontroller, enhancing the user interface.
+        </p>
+        <p class="text-gray-700">
+            Debugging and programming features are implemented through the inclusion of header pins, which provide easy access to critical signals on the PCB. This ensures efficient troubleshooting and firmware updates during the development phase. The addition of a reset button and RGB LED offers interactive control, allowing users to reset the system or receive visual feedback through color-coded status indicators.
+        </p>
+        <p class="text-gray-700">
+            The PCB also incorporates an analog input via a potentiometer, which can be programmed to control variables such as LED brightness or other analog parameters. This flexibility makes the design adaptable to a variety of applications. Additionally, the power management section ensures stable operation by using a voltage regulator to convert a 12V input source to a reliable 5V output for the microcontroller and other components.
+        </p>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Circuit Components</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>ATmega328P microcontroller</li>
+            <li>L293D motor driver IC for DC motor control</li>
+            <li>CD4511BE IC for 7-segment display integration</li>
+            <li>Header pins for debugging and programming support</li>
+            <li>Reset button and RGB LED for user interface feedback</li>
+            <li>Potentiometer for analog input control</li>
+            <li>Voltage regulator for power supply management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- Media Section -->
+<section id="media" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Media</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Image -->
+        <img src="assets/projects/Project 4/Schematic.png" alt="img" class="rounded shadow-lg">
+        <img src="assets/projects/Project 4/Layout.png" alt="img" class="rounded shadow-lg">
+        <img src="assets/projects/Project 4/PCB Layout.png" alt="img" class="rounded shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jerin K Jose | <a href="https://github.com/Jerin-K-Jose" target="_blank" class="hover:text-blue-400">GitHub</a> | <a href="https://linkedin.com/in/jerin-k-jose" target="_blank" class="hover:text-blue-400">LinkedIn</a> | <a href="https://www.instagram.com/jerin_j.j/" target="_blank" class="hover:text-blue-400">Instagram</a></p>
+    </div>
+  </footer>
+</body>
+</html>
